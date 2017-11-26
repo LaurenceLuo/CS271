@@ -153,8 +153,8 @@ bool UsedInCol(int** array, int col, int num)
 
 bool UsedInBox(int** array, int boxStartRow, int boxStartCol, int num)
 {
-    for (int row = 0; row < 4; row++)
-        for (int col = 0; col < 4; col++)
+    for (int row = 0; row < NUM_SQRS; row++)
+        for (int col = 0; col < NUM_SQRS; col++)
             if (array[row+boxStartRow][col+boxStartCol] == num)
                 return true;
     return false;
@@ -166,7 +166,7 @@ bool isSafe(int** array, int row, int col, int num)
      current column and current 3x3 box */
     return !UsedInRow(array, row, num) &&
     !UsedInCol(array, col, num) &&
-    !UsedInBox(array, row - row%4 , col - col%4, num);
+    !UsedInBox(array, row - row%NUM_SQRS , col - col%NUM_SQRS, num);
 }
 
 bool solve(int** array){
