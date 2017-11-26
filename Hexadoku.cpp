@@ -34,6 +34,15 @@ int digitCharToInt(char c){
     return -1;
 }
 
+char intToDigitChar(int i){
+    if(i >= 0 && i <= 9)
+        return (char)(i + (int)'0');
+    if(i >= 10 && i <= 15)
+        return (char)(i - 10 + (int)'A');
+    
+    return '\0';
+}
+
 int** getInputArray(string s){
     int** array=new int*[NUM_DIGITS];
     for(int i=0;i<NUM_DIGITS;i++)
@@ -196,7 +205,10 @@ int main(){
     cout<<"Input array: "<<endl;
     for(int i=0;i<NUM_DIGITS;i++){
         for(int j=0;j<NUM_DIGITS;j++){
-            cout<<array[i][j]<<"\t";
+            if(array[i][j]!=-1)
+                cout<<intToDigitChar(array[i][j])<<"\t";
+            else
+                cout<<array[i][j]<<"\t";
         }
         cout<<endl;
     }
@@ -210,7 +222,7 @@ int main(){
     cout<<"One solution: "<<endl;
     for(int i=0;i<NUM_DIGITS;i++){
         for(int j=0;j<NUM_DIGITS;j++){
-            cout<<array[i][j]<<"\t";
+            cout<<intToDigitChar(array[i][j])<<"\t";
         }
         cout<<endl;
     }
