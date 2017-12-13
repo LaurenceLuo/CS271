@@ -1,0 +1,56 @@
+General guidelines :
+====================
+
+1) Report the results as an appendix in your written report. Note that appendix is not included
+       in the written report page limit (5-10 pages).
+2) Report only results of your best-preforming algorithms. If you have more than 1 (or e.g. if 
+   none of your algorithms dominates the others), report the results for each algorithm separately.
+       e.g. if you have two algorithms A1 and A2, report results first for algorithm A1 and then algorithm A2.
+3) Statistics of your algorithm to report :
+       for each algorithm and problem instance report (do not average/summarize over problem instances; report for each problem instance separately) :
+       -) runtime (cpu time) of your program
+       -) in case of (systematic) state-space search, number of search space nodes generated/expanded
+       -) in case of backtracking search, number of search space nodes generated/pruned and number of backtracks
+       -) in case of local search (e.g. greedy local search, simulated annealing, etc.), number of steps/flips/moves
+       -) in case of genetic algorithm, population size and number of iterations
+4) Evaluation :
+       1st place = 5 pts
+       2nd place = 3 pts
+       3rd place = 1 pt
+
+N-queens
+========
+
+find the largest N such that you can solve this problem in 300 seconds.
+report :
+       1) value of N (timeout 300 sec)
+       2) do not print the actual solution; upload a zip file with the solution for the N given in (1) in the format described on the class webpage to the dropbox with other source materials
+       3) algorithm statistics
+
+Sudoku
+======
+
+for each of the 8 benchmark problems
+report :
+       1) a solution in the format described on the class webpage
+       2) algorithm statistics
+please note that for readability, the input problems in sudoku.txt are organized as 16x16 grids, one row per line, with spaces separating the values.
+
+Mastermind
+==========
+
+for each of the 6 benchmark problems,
+report :
+       1) number of guesses
+       2) algorithm statistics
+please note that problem definitions are in files sokoban0.txt-sokoban5.txt; for testing purposes, a visual representation of the problems are in input0.txt-input5.txt.
+
+Sokoban
+=======
+
+for each of the 6 benchmark problems,
+report :
+       1) a solution in the format described on the class webpage
+       2) number of steps/moves in the plan you find to move boxes to storage locations
+       3) algorithm statistics
+
