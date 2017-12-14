@@ -1,41 +1,41 @@
 Hexa-101:
-0	1	2	E	3	6	4	7	5	8	D
-3	4	5	7	2	A	D	F	C	6	E
-6	9	B	8	0	C	1	E	2	3	7
-A	C	D	F	5	B	8	9	1	4	6
-1	8	3	2	6	0	7	C	A	B	F
-7	B	C	4	E	3	9	5	D	F	8
-9	A	E	5	4	2	F	D	0	1	C
-D	0	F	6	A	8	B	1	3	E	9
-2	3	1	9	7	D	0	6	8	A	4
-4	5	6	A	1	9	2	3	7	C	0
-E	D	7	B	C	F	5	8	4	0	1
-8	F	0	C	B	E	A	4	9	D	3
-5	2	8	1	D	7	3	0	E	9	B
-B	E	9	3	F	5	C	2	6	7	A
-C	6	A	D	9	4	E	B	F	5	2
-F	7	4	0	8	1	6	A	B	2	5
-The time spent backtracing: 1.53335 seconds.
-Number of search space nodes: 16341797
-Number of backtracks: 1021248
+0	1	2	E	3	6	4	7	5	8	9	F	C	A	B	D	
+3	4	5	7	2	A	D	F	C	6	B	0	8	1	9	E	
+6	9	B	8	0	C	1	E	2	3	D	A	F	4	5	7	
+A	C	D	F	5	B	8	9	1	4	7	E	0	2	3	6	
+1	8	3	2	6	0	7	C	A	B	5	9	D	E	4	F	
+7	B	C	4	E	3	9	5	D	F	6	2	A	0	1	8	
+9	A	E	5	4	2	F	D	0	1	8	7	3	B	6	C	
+D	0	F	6	A	8	B	1	3	E	C	4	2	5	7	9	
+2	3	1	9	7	D	0	6	8	A	E	5	B	F	C	4	
+4	5	6	A	1	9	2	3	7	C	F	B	E	8	D	0	
+E	D	7	B	C	F	5	8	4	0	2	3	6	9	A	1	
+8	F	0	C	B	E	A	4	9	D	1	6	5	7	2	3	
+5	2	8	1	D	7	3	0	E	9	A	C	4	6	F	B	
+B	E	9	3	F	5	C	2	6	7	4	8	1	D	0	A	
+C	6	A	D	9	4	E	B	F	5	0	1	7	3	8	2	
+F	7	4	0	8	1	6	A	B	2	3	D	9	C	E	5
+The time spent backtracing: 1.53335 seconds.  	MCV: 0.2738 (should be 0.00352 but due to set checking)
+Number of search space nodes: 1021461		236
+Number of backtracks: 1021248			22
 
 Hexa-100:
-0	3	4	5	1	8	2	7	6	9	D
-6	B	1	7	E	0	5	C	D	8	A
-9	A	E	C	3	6	D	F	0	5	2
-2	8	F	D	4	9	A	B	1	3	0
-D	0	3	1	2	4	6	5	A	F	C
-4	2	6	8	B	E	C	0	3	1	5
-5	E	C	B	7	A	F	9	2	0	3
-7	F	9	A	8	1	3	D	C	E	4
-1	4	5	6	0	2	7	3	B	A	E
-8	D	0	3	9	C	B	6	7	2	1
-E	C	B	F	A	5	8	1	4	D	7
-A	7	2	9	D	F	E	4	5	C	6
-B	6	D	E	F	7	1	A	9	4	8
-C	1	A	0	6	B	9	E	8	7	F
-F	9	8	4	5	3	0	2	E	6	B
-3	5	7	2	C	D	4	8	F	B	9
+0	3	4	5	1	8	2	7	6	9	A	E	F	B	C	D	
+6	B	1	7	E	0	5	C	D	8	F	2	3	9	4	A	
+9	A	E	C	3	6	D	F	0	5	4	B	1	8	7	2	
+2	8	F	D	4	9	A	B	1	3	7	C	E	6	5	0	
+D	0	3	1	2	4	6	5	A	F	9	8	7	E	B	C	
+4	2	6	8	B	E	C	0	3	1	D	7	A	F	9	5	
+5	E	C	B	7	A	F	9	2	0	6	4	8	1	D	3	
+7	F	9	A	8	1	3	D	C	E	B	5	2	0	6	4	
+1	4	5	6	0	2	7	3	B	A	8	9	C	D	F	E	
+8	D	0	3	9	C	B	6	7	2	E	F	4	5	A	1	
+E	C	B	F	A	5	8	1	4	D	3	6	9	2	0	7	
+A	7	2	9	D	F	E	4	5	C	0	1	B	3	8	6	
+B	6	D	E	F	7	1	A	9	4	5	3	0	C	2	8	
+C	1	A	0	6	B	9	E	8	7	2	D	5	4	3	F	
+F	9	8	4	5	3	0	2	E	6	C	A	D	7	1	B	
+3	5	7	2	C	D	4	8	F	B	1	0	6	A	E	9
 The time spent backtracing: 0.291882 seconds.
-Number of search space nodes: 3147876
+Number of search space nodes: 196840
 Number of backtracks: 196635
